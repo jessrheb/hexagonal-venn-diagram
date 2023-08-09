@@ -52,32 +52,32 @@ body {
   );
 }
 
-.a,
-.ab,
-.b,
-.abc,
-.bc,
-.ac,
-.c {
+#a,
+#ab,
+#b,
+#abc,
+#bc,
+#ac,
+#c {
   width: 20rem;
   height: 20rem;
   position: absolute;
   transition: all 0.6s ease;
 }
 
-.a,
-.b,
-.c {
+#a,
+#b,
+#c {
   background-color: var(--lighter-background-color);
 }
 
-.abc {
+#abc {
   background-color: var(--darker-background-color);
 }
 
-.ab,
-.bc,
-.ac {
+#ab,
+#bc,
+#ac {
   background-color: var(--medium-background-color);
 }
 
@@ -85,7 +85,7 @@ body {
   filter: brightness(60%);
 }
 
-.a {
+#a {
   clip-path: polygon(
     75% 12.5%,
     50% 0,
@@ -102,11 +102,11 @@ body {
   height: 40rem;
 }
 
-.ab {
+#ab {
   clip-path: polygon(50% 25%, 100% 50%, 100% 100%, 50% 75%, 0 100%, 0 50%);
 }
 
-.b {
+#b {
   clip-path: polygon(
     25% 12.5%,
     50% 0,
@@ -123,24 +123,24 @@ body {
   height: 40rem;
 }
 
-.abc {
+#abc {
   clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
   top: 15rem;
 }
 
-.bc {
+#bc {
   clip-path: polygon(100% 25%, 100% 75%, 50% 100%, 0 75%, 50% 50%, 50% 0);
   top: 20rem;
   left: 10rem;
 }
 
-.ac {
+#ac {
   clip-path: polygon(0 25%, 0 75%, 50% 100%, 100% 75%, 50% 50%, 50% 0);
   top: 20rem;
   left: -10rem;
 }
 
-.c {
+#c {
   clip-path: polygon(
     0 50%,
     0 75%,
@@ -157,20 +157,20 @@ body {
   height: 40rem;
 }
 
-.a .textbox,
-.ab .textbox,
-.b .textbox,
-.abc .textbox,
-.bc .textbox,
-.ac .textbox,
-.c .textbox {
+#a .textbox,
+#ab .textbox,
+#b .textbox,
+#abc .textbox,
+#bc .textbox,
+#ac .textbox,
+#c .textbox {
   position: relative;
   margin: 0;
   height: 100%;
   width: 100%;
 }
 
-.a .textbox {
+#a .textbox {
   clip-path: polygon(
     75% 12.5%,
     50% 0,
@@ -183,11 +183,11 @@ body {
   );
 }
 
-.ab .textbox {
+#ab .textbox {
   clip-path: polygon(50% 25%, 100% 50%, 100% 100%, 50% 75%, 0 100%, 0 50%);
 }
 
-.b .textbox {
+#b .textbox {
   clip-path: polygon(
     25% 12.5%,
     50% 0,
@@ -200,19 +200,19 @@ body {
   );
 }
 
-.abc .textbox {
+#abc .textbox {
   clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
 }
 
-.bc .textbox {
+#bc .textbox {
   clip-path: polygon(100% 25%, 100% 75%, 50% 100%, 0 75%, 50% 50%, 50% 0);
 }
 
-.ac .textbox {
+#ac .textbox {
   clip-path: polygon(0 25%, 0 75%, 50% 100%, 100% 75%, 50% 50%, 50% 0);
 }
 
-.c .textbox {
+#c .textbox {
   clip-path: polygon(
     0 50%,
     0 75%,
@@ -239,9 +239,9 @@ body {
   padding: 0.3rem;
 }
 
-.a .textbox .content li,
-.b .textbox .content li,
-.c .textbox .content li {
+#a .textbox .content li,
+#b .textbox .content li,
+#c .textbox .content li {
   padding: 0.4rem;
 }
 
@@ -260,7 +260,7 @@ body {
   text-transform: uppercase;
 }
 
-.a .textbox::before {
+#a .textbox::before {
   shape-outside: polygon(
     100% 0%,
     100% 7.5%,
@@ -290,7 +290,7 @@ body {
   width: 35%;
 }
 
-.a .textbox .content::before {
+#a .textbox .content::before {
   shape-outside: polygon(
     0% 0%,
     100% 0%,
@@ -322,7 +322,7 @@ body {
   width: 65%;
 }
 
-.ab .textbox::before {
+#ab .textbox::before {
   shape-outside: polygon(
     0% 0%,
     100% 0%,
@@ -347,7 +347,7 @@ body {
   shape-margin: 2%;
 }
 
-.ab .textbox .content::before {
+#ab .textbox .content::before {
   shape-outside: polygon(
     0% 0%,
     100% 0%,
@@ -374,7 +374,7 @@ body {
   shape-margin: 2%;
 }
 
-.b .textbox::before {
+#b .textbox::before {
   shape-outside: polygon(
     77.5% 0%,
     100% 7.5%,
@@ -406,7 +406,7 @@ body {
   width: 65%;
 }
 
-.b .textbox .content::before {
+#b .textbox .content::before {
   shape-outside: polygon(
     0% 0%,
     0% 7.5%,
@@ -436,14 +436,14 @@ body {
   width: 35%;
 }
 
-.abc .textbox::before {
+#abc .textbox::before {
   shape-outside: polygon(0% 0%, 100% 0%, 0% 25%, 0% 75%, 100% 100%, 0% 100%);
   float: left;
   clip-path: polygon(0% 0%, 100% 0%, 0% 25%, 0% 75%, 100% 100%, 0% 100%);
   shape-margin: 2%;
 }
 
-.abc .textbox .content::before {
+#abc .textbox .content::before {
   shape-outside: polygon(
     100% 0%,
     0% 0%,
@@ -457,14 +457,14 @@ body {
   shape-margin: 2%;
 }
 
-.bc .textbox::before {
+#bc .textbox::before {
   shape-outside: polygon(100% 0%, 100% 50%, 0% 75%, 100% 100%, 0% 100%, 0% 0%);
   float: left;
   clip-path: polygon(100% 0%, 100% 50%, 0% 75%, 100% 100%, 0% 100%, 0% 0%);
   shape-margin: 2%;
 }
 
-.bc .textbox .content::before {
+#bc .textbox .content::before {
   shape-outside: polygon(
     100% 0%,
     100% 25%,
@@ -487,7 +487,7 @@ body {
   shape-margin: 2%;
 }
 
-.ac .textbox::before {
+#ac .textbox::before {
   shape-outside: polygon(
     0% 25%,
     0% 75%,
@@ -510,14 +510,14 @@ body {
   shape-margin: 2%;
 }
 
-.ac .textbox .content::before {
+#ac .textbox .content::before {
   shape-outside: polygon(100% 0%, 100% 100%, 0% 100%, 100% 75%, 0% 50%, 0% 0%);
   float: right;
   clip-path: polygon(100% 0%, 100% 100%, 0% 100%, 100% 75%, 0% 50%, 0% 0%);
   shape-margin: 2%;
 }
 
-.c .textbox::before {
+#c .textbox::before {
   shape-outside: polygon(
     100% 0%,
     100% 50%,
@@ -542,7 +542,7 @@ body {
   shape-margin: 2%;
 }
 
-.c .textbox .content::before {
+#c .textbox .content::before {
   shape-outside: polygon(
     100% 0%,
     100% 75%,
